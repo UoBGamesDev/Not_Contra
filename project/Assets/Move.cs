@@ -22,14 +22,14 @@ public class Move : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log (gameObject.name);
-		horizontal 	= ("Horizontal" 	+gameObject.name);
-		vertical 	= ("Vertical" 		+gameObject.name);
-		jump 		= ("Jump" 			+gameObject.name);
-		fire 		= ("Fire" 			+gameObject.name);
-		rollLeft 	= ("RollLeft" 		+gameObject.name);
-		rollRight 	= ("RollRight" 		+gameObject.name);
-		grenade 	= ("Grenade" 		+gameObject.name);
-		dropIn 		= ("DropIn" 		+gameObject.name);
+		horizontal 	= ("Horizontal" 	+ gameObject.name);
+		vertical 	= ("Vertical" 		+ gameObject.name);
+		jump 		= ("Jump" 			+ gameObject.name);
+		fire 		= ("Fire" 			+ gameObject.name);
+		rollLeft 	= ("RollLeft" 		+ gameObject.name);
+		rollRight 	= ("RollRight" 		+ gameObject.name);
+		grenade 	= ("Grenade" 		+ gameObject.name);
+		dropIn 		= ("DropIn" 		+ gameObject.name);
 	}
 	
 	// Update is called once per frame
@@ -56,9 +56,9 @@ public class Move : MonoBehaviour {
 		transform.position = new Vector3(transform.position.x, transform.position.y, 10.0f);
 		
 		if (Input.GetAxis(fire) > 0.9) {
-			if (Input.GetAxis(horizontal) > 0.5f && Input.GetAxis(vertical) > 0.5f) {
+//			if (Input.GetAxis(horizontal) > 0.5f && Input.GetAxis(vertical) > 0.5f) {
 				Instantiate(boolet, (transform.position + new Vector3 (1.6f, 0, 0)), transform.rotation);
-			}
+//			}
 		}
 	}
 	
