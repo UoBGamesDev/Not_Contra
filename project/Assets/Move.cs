@@ -15,6 +15,8 @@ public class Move : MonoBehaviour {
 	string grenade;
 	string dropIn;
 	
+	public GameObject boolet;
+	
 	private Vector3 moveDirection = Vector3.zero;
 
 	// Use this for initialization
@@ -52,6 +54,12 @@ public class Move : MonoBehaviour {
 		
 		controller.Move(moveDirection * Time.deltaTime);
 		transform.position = new Vector3(transform.position.x, transform.position.y, 10.0f);
+		
+		if (Input.GetAxis(fire) > 0.9) {
+			if (Input.GetAxis(horizontal) > 0.5f && Input.GetAxis(vertical) > 0.5f) {
+				Instantiate(boolet, (transform.position + new Vector3 (1.6f, 0, 0)), transform.rotation);
+			}
+		}
 	}
 	
 	float deadZones(float zone, float input) {

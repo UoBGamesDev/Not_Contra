@@ -13,6 +13,7 @@ public class CameraControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		views = new GameObject[] {p1,p2,p3,p4};
+		Debug.Log (Input.GetJoystickNames());
 	}
 	
 	// Update is called once per frame
