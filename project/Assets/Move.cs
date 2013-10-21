@@ -19,6 +19,7 @@ public class Move : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Debug.Log (gameObject.name);
 		horizontal 	= ("Horizontal" 	+gameObject.name);
 		vertical 	= ("Vertical" 		+gameObject.name);
 		jump 		= ("Jump" 			+gameObject.name);
