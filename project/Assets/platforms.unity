@@ -7311,6 +7311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1974873123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7325,9 +7327,9 @@ MonoBehaviour:
   diffX: 0
   diffY: 0
   p1: {fileID: 2088996147}
-  p2: {fileID: 0}
-  p3: {fileID: 0}
-  p4: {fileID: 0}
+  p2: {fileID: 760551170}
+  p3: {fileID: 253607697}
+  p4: {fileID: 704604896}
 --- !u!1 &1975188691
 GameObject:
   m_ObjectHideFlags: 0
